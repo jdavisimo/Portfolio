@@ -1,0 +1,145 @@
+/* NavHeader CSS */
+
+#navHeader {
+  border: solid orange 5px;
+  justify-content: space-between;
+  display: flex;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold
+;}
+
+#menuButtons {
+  display: flex;}
+
+#menuButtons li {
+margin-right: 20px;
+list-style: none;
+
+}
+
+body {
+  margin-left: 96px;
+  margin-right: 96px;
+}
+
+/* Portfolio Grid CSS */
+
+
+.navBar {
+  border: solid yellow 5px;
+  height: 195px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  ;}
+
+
+.bodyText {
+  font-family: 'Roboto', sans-serif;
+;}
+
+.tealBox {
+  min-width: 224px;
+  background-color: #7ffde6;
+  border: solid #7ffde6 5px;
+  ;}
+
+.footerNav {
+  font-family: 'Roboto', sans-serif;
+  align-content: center
+;}
+
+#portfolioHomeGrid {
+  margin: 0px 5%;
+  grid-gap: 16px;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-areas:
+  "phg1 phg2 phg3"
+  "phg4 phg5 phg6"
+  "phg7 phg8 phg9";}
+
+#phg1 {
+  grid-area: phg1;
+  background-image: url("../images/beds.png");
+  background-color: #f5f5f5;
+}
+
+
+#phg2 {
+  grid-area: phg2;
+  background-image: url("../images/beds.png");
+  background-color: #f5f5f5;
+}
+  #phg3 {
+  grid-area: phg3;
+  background-image: url("../images/beds.png");
+  background-color: #f5f5f5;
+}
+  #phg4 {
+  grid-area: phg4;
+  background-image: url("../images/beds.png");
+  background-color: #f5f5f5;
+}
+#phg5 {
+  grid-area: phg5;
+  background-image: url("../images/beds.png");
+  background-color: #f5f5f5;
+}
+  #phg6 {
+  grid-area: phg6;
+  background-image: url("../images/beds.png");
+  background-color: #f5f5f5;
+}
+#phg7 {
+  grid-area: phg7;
+  background-image: url("../images/beds.png");
+  background-color: #f5f5f5;
+}
+#phg8 {
+  grid-area: phg8;
+  background-image: url("../images/beds.png");
+  background-color: #f5f5f5;
+}
+#phg9 {
+  grid-area: phg9;
+  background-image: url("../images/beds.png");
+  background-color: #f5f5f5;
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+  #heroGrid {
+    grid-template-areas:
+    "featuredProduct featuredProduct"
+    "secondaryProduct CTA";
+  }
+  #categoryGrid {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "bookcases"
+      "bedroom"
+      "patio"
+      "couches"
+      "desks"
+    ;
+  }
+}
