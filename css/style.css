@@ -30,12 +30,9 @@ footer {
   padding-top: 50px;
   display: inline;
   text-align: center;
-  text-size-adjust: small;
   background-color: #f5f5f5;
-  color: #7ffde;
-}
-      
-
+  color: red;
+} 
 
 
 /* NavHeader CSS */
@@ -58,7 +55,6 @@ margin-right: 20px;
 list-style: none;
 }
 
-
 .navBar {
 background-color: #efefef;
 border: solid yellow 5px;
@@ -67,7 +63,6 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 }
-
 
 .tealBox {
 width: 90%;
@@ -83,21 +78,10 @@ background-color: #FFFFFF;
     
 /* Portfolio Grid CSS */
 
-
-.bodyText {
-font-family: 'Roboto', sans-serif;
-}
-
 .footerNav {
 font-family: 'Roboto', sans-serif;
 align-content: center;
 }
-
-.gridImage {
-  height: 100%;
-  width: 100%;
-}
-
 
 #skillsGrid {
   margin: 0px 5%;
@@ -108,27 +92,20 @@ align-content: center;
   "sg1 sg2 sg3";
 }
 
-#sg1 {
-  grid-area: sg1;
+.skg {
   background-image: url("../images/");
   background-color: #f5f5f5;
 }
-#sg2 {
-  grid-area: sg2;
-  background-image: url("../images/Waves-1-06.png");
-  background-color: #f5f5f5;
-}
-#sg3 {
-  grid-area: sg3;
-  background-image: url("../images/Waves-1-06.png");
-  background-color: #f5f5f5;
+
+.skillsGridImage {
+  height: 300px;
+  width: 300px;
 }
 
 #portfolioHomeGrid {
   margin: 0px 5%;
   grid-gap: 16px;
   display: grid;
-  padding-bottom: 2fr;
   grid-template-rows: 300px 300px 300px;
   grid-template-columns: 300px 300px 300px;
   grid-template-areas:
@@ -137,47 +114,23 @@ align-content: center;
   "phg7 phg8 phg9";
 }
 
-#phg1 {
-  grid-area: phg1;
+.phg { 
+	transition: all .2s ease-in-out; 
   background-color: #f5f5f5;
 }
 
-#phg2 {
-  grid-area: phg2;
-  background-color: #f5f5f5;
-}
-  #phg3 {
-  grid-area: phg3;
-  background-color: #f5f5f5;
-}
-  #phg4 {
-  grid-area: phg4;
-  background-color: #f5f5f5;
-}
-#phg5 {
-  grid-area: phg5;
-  background-color: #f5f5f5;
-}
-  #phg6 {
-  grid-area: phg6;
-  background-color: #f5f5f5;
-}
-#phg7 {
-  grid-area: phg7;
-  background-color: #f5f5f5;
-}
-#phg8 {
-  grid-area: phg8;
-  background-color: #f5f5f5;
-}
-#phg9 {
-  grid-area: phg9;
-  background-color: #f5f5f5;
+.gridImage {
+  height: 100%;
+  width: 100%;
 }
 
+/* HOVER ATTEMPT - REMOVE? */
 
+.phg:hover { 
+    	transform: scale(1.5); 
+    }
 
-
+/* BREAKPOINTS */
 
 @media only screen and (max-width: 1000px) {
   #navigation {
@@ -210,7 +163,6 @@ align-content: center;
     ;}
 
 
-
 @media only screen and (max-width: 600px) {
 
 
@@ -220,7 +172,5 @@ align-content: center;
       "sg1"
       "sg2"
       "sg3";
-    
-
     }
     ;}
