@@ -13,10 +13,17 @@ function onClick(element) {
 
 $( ".phg" ).hover(
   function() {
-    $(.phg).addClass("hover");
+    $(".phg").addClass("hover");
   }, function() {
-    $(.phg).removeClass( "hover" );
-  }
-);
-
+    $(".phg").removeClass("hover");
+  });
 $(".phg").off("mouseenter mouseleave");
+
+
+$( ".skillsGridImage" ).hover(
+  function() {
+    $(".skillsGridImage").addClass("hover");
+  }, function() {
+    $(".skillsGridImage").removeClass("hover");
+  });
+$(".skillsGridImage").off("mouseenter mouseleave");

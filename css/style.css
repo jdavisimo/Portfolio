@@ -1,37 +1,35 @@
 /* Base Styles CSS */
 
 h1 {
+  padding-top: 60px;
   font-size: xx-large;
   font-family: 'Newsreader', serif;
   font-weight: lighter;
-  align-content: left;
   }
   
   
 h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
-  align-content: left;
   }
   
 h3 {
   font-family: 'Newsreader', serif;
   font-weight: lighter;
-  align-content: left;
   }
 
 body {
+  color: #352e2c;
   margin-left: 96px;
   margin-right: 96px;
   font-family: 'Roboto', sans-serif;
   }
 
 footer {
-  padding-top: 50px;
-  display: inline;
+  padding: 200px;
   text-align: center;
   background-color: #f5f5f5;
-  color: red;
+  color: #352e2c;
 } 
 
 
@@ -44,6 +42,10 @@ display: flex;
 font-family: 'Roboto Condensed', sans-serif;
 font-weight: bold;
 align-items: flex-end;
+}
+
+#aboutHeader {
+padding: 60px;
 }
 
 #menuButtons {
@@ -93,18 +95,22 @@ align-content: center;
 }
 
 .skg {
-  background-image: url("../images/");
   background-color: #f5f5f5;
 }
 
 .skillsGridImage {
+	transition: all .1s ease-in-out; 
   height: 300px;
   width: 300px;
 }
 
+.skillsGridImage:hover { 
+  transform: scale(1.12); 
+}
 #portfolioHomeGrid {
   margin: 0px 5%;
   grid-gap: 16px;
+  padding-bottom: 160px;
   display: grid;
   grid-template-rows: 300px 300px 300px;
   grid-template-columns: 300px 300px 300px;
@@ -114,9 +120,17 @@ align-content: center;
   "phg7 phg8 phg9";
 }
 
+.padding { 
+  padding: 60px;
+}
+
 .phg { 
-	transition: all .2s ease-in-out; 
+	transition: all .1s ease-in-out; 
   background-color: #f5f5f5;
+}
+
+.phg:hover { 
+  transform: scale(1.12); 
 }
 
 .gridImage {
@@ -124,11 +138,49 @@ align-content: center;
   width: 100%;
 }
 
-/* HOVER ATTEMPT - REMOVE? */
+/* CASE STUDIES PAGE STYLES */
 
-.phg:hover { 
-    	transform: scale(1.5); 
-    }
+.caseStudyImage {
+	transition: all .1s ease-in-out; 
+  height: 300px;
+  width: 600px;
+}
+
+.caseStudyImage:hover { 
+  transform: scale(1.05 ); 
+}
+
+.caseRight {
+  grid-gap: 16px;
+  display: grid;
+  padding: 60px;
+  grid-template-columns: 600px 300px;
+  grid-template-areas:
+  "caseImageLeft caseTextRight";
+}
+
+.caseLeft {
+  grid-gap: 16px;
+  display: grid;
+  padding: 60px;
+  grid-template-columns: 300px 600px;
+  grid-template-areas:
+  "caseTextLeft caseImageRight";
+}
+
+.caseStudy {
+  column-width: span;
+  height: 100%;
+  width: 100%;
+}
+
+
+.descText {
+  color: #352e2c;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+}
+
 
 /* BREAKPOINTS */
 
