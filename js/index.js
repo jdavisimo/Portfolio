@@ -27,3 +27,12 @@ $( ".skillsGridImage" ).hover(
     $(".skillsGridImage").removeClass("hover");
   });
 $(".skillsGridImage").off("mouseenter mouseleave");
+
+
+$( ".menuButtons" ).hover(
+  function() {
+    $(".menuButtons").addClass("hover");
+  }, function() {
+    $(".menuButtons").removeClass("hover");
+  });
+$(".menuButtons").off("mouseenter mouseleave");
